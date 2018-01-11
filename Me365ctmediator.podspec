@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "Me365ctmediator"
   s.version      = "0.0.1"
-  s.summary      = "A short description of Me365ctmediator."
+  s.summary      = "用于各个组件之间通信的CTMediator的分类"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,11 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+  这个主要是用于各个组件之间通信的 CTMediator的分类 所有的组件之间相互调用的方法 数据传递 都是在这个类里面的
+  方法 。比如组建A调用组件B 在组件A中包含这分类  调用相关方法
                    DESC
 
-  s.homepage     = "http://EXAMPLE/Me365ctmediator"
+  s.homepage     = "https://github.com/zhangwenyong/Me365ctmediator.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +40,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -67,7 +69,7 @@ Pod::Spec.new do |s|
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+   s.ios.deployment_target = "8.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -79,7 +81,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/Me365ctmediator.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/zhangwenyong/Me365ctmediator.git",:commit => "c6087d872e02027b96ac4706bd4d65b2d407ea8c", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,7 +92,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "Me365ctmediator", "Me365ctmediator/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -132,6 +134,6 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+   s.dependency  'CTMediator', '~> 6'
 
 end
