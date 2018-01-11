@@ -81,7 +81,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/zhangwenyong/Me365ctmediator.git",:commit => "c6087d872e02027b96ac4706bd4d65b2d407ea8c", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/zhangwenyong/Me365ctmediator.git",:commit => "ea923c95241718582fb9c910f812518d1d52d7b4", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
