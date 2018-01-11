@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Me365ctmediator"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "用于各个组件之间通信的CTMediator的分类"
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/zhangwenyong/Me365ctmediator.git",:commit => "ea923c95241718582fb9c910f812518d1d52d7b4", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/zhangwenyong/Me365ctmediator.git", :tag => "0.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
