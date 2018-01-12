@@ -14,28 +14,25 @@
 
 #pragma mark ==模块一==
 -(UIViewController *)Z_ViewControlller1:(NSDictionary *)dic{
-    
     return  [self performTarget:@"" action:@"" params:nil shouldCacheTarget:isCache];
 }
-
 #pragma mark ===模块二==
 -(UIViewController *)Z_ViewControlller2:(NSDictionary *)dic{
-    
       return  [self performTarget:@"" action:@"" params:nil shouldCacheTarget:isCache];
 }
-
 #pragma mark ===模块三===
 -(UIViewController *)Z_ViewControlller3:(NSDictionary *)dic{
-    
       return  [self performTarget:@"" action:@"" params:nil shouldCacheTarget:isCache];
 }
-
-
 #pragma mark ====模块四====
-
 -(UIViewController *)Z_ViewControlller4:(NSDictionary *)dic{
     
       return  [self performTarget:@"" action:@"" params:nil shouldCacheTarget:isCache];
+}
+#pragma mark ====BaseTabbrViewController=====
+-(UITabBarController *)getME365BaseTabBarViewController:(NSDictionary *)dic
+{
+    return [self performTarget:@"ME365BaseTabBarViewController" action:@"GetME365BaseTabBarViewControllerWith" params:nil shouldCacheTarget:NO];
 }
 
 

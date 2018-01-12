@@ -30,4 +30,17 @@
 -(UIViewController *)Z_ViewControlller4:(NSDictionary *)dic;
 
 
+#pragma mark ======基础模块=======
+
+
+
+#pragma mark ====BaseTabbrViewController=====
+
+-(UITabBarController *)getME365BaseTabBarViewController:(NSDictionary *)dic;
+
+#pragma mark ======BaseViewcontroller============
+
+
+
+
 @end
